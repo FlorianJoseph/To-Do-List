@@ -12,16 +12,21 @@
     <div class="paper">
         <div class="en-tete">
             <div class="titre">To Do List</div>
-            <div class="line"></div>
+            <div class="new-task">
+                    <input type="text" id="task-content">
+                    <label class="label-task-content" for="task-content">Entrez une nouvelle tâche</label>
+                    <button class="btn">Créer une nouvelle tâche</button>
+            </div>
         </div>
-        <input type="text" id="create-task">
-        <button class="btnNewTask">Créer une nouvelle tâche</button>
-        <d id="list">
-            <p>
-                <input id="checkbox" type="checkbox"></input>
-                <label for="checkbox">Win une game de League of Legends</label>
-            </p>
-        </d>
+        <ul id="list" onclick="switchColor()">
+            <li class="element-list">
+                <label>
+                    <input type='checkbox' >
+                    <span class="check"></span>
+                    <span> Test de checkbox </span>
+                </label>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
