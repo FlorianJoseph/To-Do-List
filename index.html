@@ -8,23 +8,26 @@
     <script src="./assets/js/addTask.js" defer></script>
     <title>To Do List</title>
 </head>
-<body class="background-image" style="background-image: url(./assets/img/fond\ vegetal.webp);">
+<body class="background-image" style="background-image: url(./assets/img/tableau.webp);">
     <div class="paper">
         <div class="en-tete">
             <div class="titre">To Do List</div>
             <div class="new-task">
-                    <input type="text" id="task-content">
-                    <label class="label-task-content" for="task-content">Entrez une nouvelle tâche</label>
+                    <input type="text" id="task-content" placeholder="Entrez une nouvelle tâche" >
                     <button class="btn">Créer une nouvelle tâche</button>
             </div>
         </div>
-        <ul id="list" onclick="switchColor()">
+        <ul id="list">
             <li class="element-list">
                 <label>
-                    <input type='checkbox' >
+                    <input class="dp-none" type='checkbox' >
                     <span class="check"></span>
                     <span> Test de checkbox </span>
                 </label>
+                <div>
+                    <button>Modifier</button>
+                    <button>Supprimer</button>
+                </div>
             </li>
         </ul>
     </div>
