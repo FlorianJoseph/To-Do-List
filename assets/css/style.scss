@@ -95,11 +95,12 @@ body {
         .element-list{
             border: solid 2px bisque;
             border-radius: 6px;
-            padding: 0.5vh;
+            padding: 0.5%;
+            padding-left: 2%;
             width: 90%;
             background:darkslategray;
             box-shadow: rgba(0, 0, 0, .3) 0 5px 8px;
-            margin: 2vh;
+            margin: 2%;
         }
 
         .element-list:hover{
@@ -124,8 +125,7 @@ body {
             font-family: "valentina";
             font-size: 4vh;
             color:aliceblue;
-            margin-right: 0%;
-            margin-left: 1%;
+            width: 80%;
         }
 
         label:hover{
@@ -172,14 +172,16 @@ body {
             }
         }
 
-        #task-content{
-            width: 60%;
-            height: 70%;
+        #task-modif{
+            width: 80%;
+            height: 60%;
             border-radius: 4px;
             background-color:aliceblue;
             border-color: black;
             box-shadow: rgba(0, 0, 0, .3) 0 5px 8px, inset 0.1em 0.1em 0.2em 0.05em rgba(0, 0, 0, 0.2);
             padding-left: 3%;
+            margin-left:2%;
+            margin-bottom: 4%;
         }
     }
 }

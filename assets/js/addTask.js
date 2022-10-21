@@ -2,7 +2,7 @@ const btnNewTask = document.querySelector(".btn");
 const taskContent = document.querySelector("#task-content");
 const list = document.querySelector("#list");
 
-btnNewTask.addEventListener('click', function(){
+btnNewTask.addEventListener('click', ()=>{
 
   const createLi = document.createElement('li');
   createLi.className = "element-list";
@@ -50,18 +50,37 @@ btnNewTask.addEventListener('click', function(){
   createButtonModifier.textContent = `Modifier`;
 
   createButtonModifier.addEventListener("click", ()=>{
-    createLi.childNodes[0].classList.toggle('cb-lbl');
+
     if (createLi.childNodes[0].childNodes[0].checked === false){
       createLi.childNodes[0].childNodes[0].checked = true;
     }
+    else {
+      createLi.childNodes[0].childNodes[0].checked = false;
+    }
 
     const createInput = document.createElement('input');
-    createSpanCheck.remove()
-    createSpanText.remove()
+    createSpanText.remove();
     createInput.type = "text";
-    createInput.id = "task-content";
-    createInput.placeholder = "Entrez la tâche modifiée"
+    createInput.id = "task-modif";
+    createInput.value = createSpanText.textContent;
     createLabel.appendChild(createInput);
+    createButtonModifier.remove()
+
+    const createButtonValider = document.createElement('button');
+    createDiv.appendChild(createButtonValider);
+    createButtonValider.textContent = `Valider`;
+
+    createButtonValider.addEventListener("click",()=>{
+      if (createLi.childNodes[0].childNodes[0].checked === false){
+        createLi.childNodes[0].childNodes[0].checked = true;
+      }
+      else {
+        createLi.childNodes[0].childNodes[0].checked = false;
+      }
+      createLabel.appendChild(createSpanText);
+      createSpanText.textContent = createInput.value;
+      createInput.remove() 
+    })
   })
 
   const createButtonSupprimer = document.createElement('button');
