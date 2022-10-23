@@ -15,17 +15,18 @@ body {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    flex-direction: column;
 
     button{
         width: 30%;
-        height: 81%;
+        height: 79%;
         border-radius: 4px;
         font-size: 18px;
         font-family: "nature";
         border-color: 0.5px;
         box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
         background-color: bisque;
-        color: black;
+        color:darkslategray;
     }
 
     button:hover {
@@ -43,10 +44,22 @@ body {
     .paper {
         border: double rgba(255, 255, 255, 0.408) 10px;
         width: 60vw;
+        height: 30vh;
+        background-color: rgba(56, 106, 67, 0.8);
+        border-bottom: none;
+        padding-right: 2vh;
+        padding-left: 2vh;
+        padding-top: 2vh;
+    }
+
+    .paper2 {
+        border: double rgba(255, 255, 255, 0.408) 10px;
+        width: 60vw;
         height: 90vh;
         padding: 2vh;
         background-color: rgba(56, 106, 67, 0.8);
         overflow: auto;
+        border-top: none;
     }
 
     .en-tete{
@@ -54,8 +67,6 @@ body {
         width: 100%;
         flex-direction: column;
         align-items: center;
-        margin-top: 1vh;
-        margin-bottom: 3vh;
 
         .titre {
             color: aliceblue;
@@ -97,10 +108,11 @@ body {
             border-radius: 6px;
             padding: 0.5%;
             padding-left: 2%;
-            width: 90%;
+            width: 91%;
             background:darkslategray;
             box-shadow: rgba(0, 0, 0, .3) 0 5px 8px;
-            margin: 2%;
+            margin-bottom: 2%;
+            margin-top: none;
         }
 
         .element-list:hover{
@@ -159,28 +171,28 @@ body {
             display: flex;
             justify-content: center;
             justify-content: space-between;
-            width:25%;
+            width:29%;
             margin-right: 1%;
             margin-top: 0.5%;
 
             button{
                 font-size: 14px;
                 width: 49%;
-                height: 80%;
-                background-color: bisque;
-                color: black;
+                height: 85%;
+                background-color:burlywood ;
+                color:darkslategray;
             }
         }
 
         #task-modif{
             width: 80%;
-            height: 60%;
+            height: 50%;
             border-radius: 4px;
             background-color:aliceblue;
             border-color: black;
             box-shadow: rgba(0, 0, 0, .3) 0 5px 8px, inset 0.1em 0.1em 0.2em 0.05em rgba(0, 0, 0, 0.2);
             padding-left: 3%;
-            margin-left:2%;
+            margin-left:4%;
             margin-bottom: 4%;
         }
     }
