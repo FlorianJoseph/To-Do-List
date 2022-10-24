@@ -10,17 +10,6 @@ btnNewTask.addEventListener('click', ()=>{
   createLi.className = "element-list";
   createLi.id = `li${document.querySelectorAll("#list li").length}`;
   list.appendChild(createLi);
-// Crée l'évènement click pour appliquer le style barré + logo validé siu la tâche est effectuée
-  // createLi.onclick = ()=>{
-  //   createLi.childNodes[0].childNodes[2].classList.toggle('cb-lbl');
-    
-  //   if (createLi.childNodes[0].childNodes[0].checked === false){
-  //     createLi.childNodes[0].childNodes[0].checked = true;
-  //   }
-  //   else {
-  //     createLi.childNodes[0].childNodes[0].checked = false;
-  //   }
-  // }
 // Crée le label aqui va contenir le texte et la checkbox
   const createLabel = document.createElement('label');
   createLi.appendChild(createLabel);
@@ -39,14 +28,10 @@ btnNewTask.addEventListener('click', ()=>{
   createSpanText.style = "margin-left : 2vh";
   createSpanText.textContent = taskContent.value;
   taskContent.value="";
-  createSpanText.addEventListener("click",() =>{
-    createLi.childNodes[0].classList.toggle('cb-lbl');
-  })
 // Crée la div à droite de la tâche pour l'emplacement des boutons
   const createDiv = document.createElement('div');
   createLi.appendChild(createDiv);
   createDiv.style = "padding-top:0.5%";
-
 // Crée le boutton pour modifier la tâche
   const createButtonModifier = document.createElement('button');
   createButtonModifier.className = `btn`;

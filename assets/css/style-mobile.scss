@@ -18,11 +18,11 @@ body {
     flex-direction: column;
 
     button{
-        width: 30%;
+        width: 35%;
         height: 79%;
         border-radius: 4px;
         font-family: "nature";
-        font-size: 2vh;
+        font-size: 0.7vh;
         border-color: 0.5px;
         box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
         background-color: bisque;
@@ -44,7 +44,7 @@ body {
     .paper {
         border: double rgba(255, 255, 255, 0.408) 10px;
         width: 60vw;
-        height: 30vh;
+        height: 14vh;
         background-color: rgba(56, 106, 67, 0.8);
         border-bottom: none;
         padding-right: 2vh;
@@ -57,6 +57,7 @@ body {
         width: 60vw;
         height: 90vh;
         padding: 2vh;
+        padding-top: 0.2vh;
         background-color: rgba(56, 106, 67, 0.8);
         overflow: auto;
         border-top: none;
@@ -70,7 +71,7 @@ body {
 
         .titre {
             color: aliceblue;
-            font-size: 6vh;
+            font-size: 4vh;
             font-weight: bold;
             font-family: "nature";
         }
@@ -78,20 +79,23 @@ body {
         .new-task{
             border: dashed 2.5px aliceblue;
             width: 55vw;
-            height: 6vh;
-            padding-bottom: 2vh;
+            height: 3vh;
+            padding-bottom: 0.5vh;
             margin-top: 3%;
             display: flex;
             justify-content: space-around;
-            padding: 1vh;
             border-radius: 5px;
-            padding-top: 2vh;
+            padding-top: 1vh;
             box-shadow :rgba(0, 0, 0, .3) 0 5px 8px;
             background-color:darkseagreen;
-            
+
+            ::placeholder{
+                font-size: 1vh;
+            }
+
             #task-content{
-                width: 60%;
-                height: 70%;
+                width: 50%;
+                height: 60%;
                 border-radius: 4px;
                 background-color:aliceblue;
                 border-color: black;
@@ -102,12 +106,13 @@ body {
     }
 
     #list{
+        margin-left: -12%;
 
         .element-list{
             border: solid 2px bisque;
             border-radius: 6px;
-            padding: 0.5%;
-            padding-left: 1%;
+            padding: 1%;
+            padding-left: 2%;
             width: 91%;
             background:darkslategray;
             box-shadow: rgba(0, 0, 0, .3) 0 5px 8px;
@@ -135,9 +140,10 @@ body {
 
         label {
             font-family: "valentina";
-            font-size: 4vh;
+            font-size: 1.5vh;
             color:aliceblue;
             width: 80%;
+            padding-top: 1.5%;
         }
 
         label:hover{
@@ -149,9 +155,9 @@ body {
         }
 
         .check {
-            height: 15px;
-            width: 15px;
-            border: 2px solid aliceblue;
+            height: 8px;
+            width: 8px;
+            border: 1px solid aliceblue;
             display: inline-block;
             position: relative;
         }
@@ -171,16 +177,17 @@ body {
             display: flex;
             justify-content: center;
             justify-content: space-between;
-            width:29%;
+            width:42%;
             margin-right: 1%;
             margin-top: 0.5%;
 
             button{
-                font-size: 1.4vh;
+                font-size: 0.7vh;
                 width: 49%;
                 height: 85%;
                 background-color:burlywood ;
                 color:darkslategray;
+                padding-bottom: 0.5vh;
             }
         }
 
