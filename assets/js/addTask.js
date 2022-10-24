@@ -2,7 +2,6 @@ const btnNewTask = document.querySelector(".btn");
 const taskContent = document.querySelector("#task-content");
 const list = document.querySelector("#list");
 
-
 // Crée l'évènement click pour créer une nouvelle tâche
 btnNewTask.addEventListener('click', ()=>{
 // Crée l'évènement liste pour les tâches
